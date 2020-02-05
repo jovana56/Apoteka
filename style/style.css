@@ -119,18 +119,18 @@ body{background: url(../pozadina.jpg);}
 }
 
 #telefon{
-    font-family: Comic Sans MS;
+    font-family: Verdana;
     font-size: 20px;
-    top: 240px;
+    top: 258px;
     left: 540px;
     position: absolute;
     background: rgba(255,0,0,0.3);
     }
 
  #adresa{
-    font-family: Comic Sans MS;
+    font-family: Verdana;
     font-size: 20px;
-    top: 240px;
+    top: 258px;
     left: 0px;
     position: absolute;
     background: rgba(255,0,0,0.3);
@@ -139,7 +139,7 @@ body{background: url(../pozadina.jpg);}
 
 
  #pronadji{
- 	 font-family: Comic Sans MS;
+ 	 font-family: Verdana;
     font-size: 20px;
     top: 540px;
     left: 255px;
@@ -170,7 +170,7 @@ a:active {
 }
 
  #pravilo{
- 	 font-family: Comic Sans MS;
+ 	 font-family: Verdana;
     font-size: 20px;
     top: 540px;
     left: 875px;

@@ -10,12 +10,19 @@
 
 	<style>
 		#dobrodosli {
-			font-family: Comic Sans MS;
+			font-family: verdana;
 			font-size: 30px;
 			top: 80px;
 			left: 140px;
+
 			position: absolute;
 			background: rgba(255, 0, 0, 0.3);
+		}
+
+		#content {
+
+			padding-left: 50px;
+			padding-bottom: 50px;
 		}
 	</style>
 	<script type="text/javascript">
@@ -65,17 +72,17 @@
 				<br>
 				Ime:<br>
 				<input type="text" name="ime" required>
-				<br>
+				<br><br>
 				Prezime:<br>
 				<input type="text" name="prezime" required>
-				<br>
+				<br><br>
 				E-mail:<br>
 				<input type="text" id="email" name="email" required>
-				<br>
+				<br><br>
 				Komentar:<br>
 				<textarea rows="5" cols="50" name="kom" required>
-				</textarea> <br>
-				<input type="submit" value="Pošalji">
+				</textarea> <br><br>
+				<input type="submit" value="Pošalji" style="height: 30px; width: 60px">
 			</form>
 			<?php
 			if (isset($_GET['ime']) && isset($_GET['prezime']) && isset($_GET['email']) && isset($_GET['kom'])) {
@@ -93,21 +100,21 @@
 				$arr = array('Ime' => $ime, 'Prezime' => $prezime, 'Email' => $email, 'Komentar' => $kom);
 
 				curl_setopt($curl, CURLOPT_POSTFIELDS, json_encode($arr));
-				
+
 				$curl_odgovor = curl_exec($curl);
-			
-				
-				
-				
+
+
+
+
 
 				$json_objekat = json_decode($curl_odgovor);
-				
-				
-				
+
+
+
 				curl_close($curl);
 			?>
 				<div id="odgServisa">
-					<p><?php echo $json_objekat->poruka; ?></p> 
+					<p><?php echo $json_objekat->poruka; ?></p>
 				</div>
 			<?php
 			}
@@ -118,7 +125,7 @@
 		</div>
 		<div id="footer">
 			<p id="tim">
-			Despotović, Todorovići</p>
+				Despotović, Todorovići</p>
 			<p id="datum">
 				<script>
 					var datum = new Date();
@@ -129,7 +136,7 @@
 
 	</div>
 
-	
+
 </body>
 
 </html>

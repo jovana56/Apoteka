@@ -9,12 +9,20 @@
 	<link rel="icon" type="image/png" href="kapsula.png">
 	<style>
 		#dobrodosli {
-			font-family: Comic Sans MS;
+			font-family: Verdana;
 			font-size: 30px;
-			top: 50px;
+			top: 10px;
 			left: 215px;
 			position: absolute;
 			background: rgba(255, 0, 0, 0.3);
+			padding: 30px;
+		}
+
+		#pronadji,
+		#pravilo {
+
+			font-family: Verdana;
+			padding: 20px;
 		}
 	</style>
 
@@ -38,17 +46,17 @@
 			</ul>
 		</div>
 		<div id="content">
-			<p id="dobrodosli" align="justify"><b>Dobrodošli!</b> <br> E-A P O T E K A</p>
+			<p id="dobrodosli" align="justify"><b>Dobrodošli u  e-apoteku!</p>
 		</div>
 		<div id="pretraga">
-			<p id="pronadji" align="justify"><b> Da li zelite da pronadjete odredjen lek? <a href="pretraga.php"> <br>PRETRAZI LEK!</a> </br>
+			<p id="pronadji" align="justify"><b> Želite da pronađete određeni lek? <a href="pretraga.php"> <br>PRETRAŽI LEK</a> <br></br>
 			</p>
 
 		</div>
 		<div id="pdf">
-			<p id="pravilo" align="justify"><b>Pravilo koriscenja sajta:</b>
-				<a href="pdfpravilnik.php" target="blank"><br>PRAVILNIK(PDF)
-				</a></p>
+			<p id="pravilo" align="justify"><b>Pravila korišćenja sajta:</b>
+				<a href="pdfpravilnik.php" target="blank"><br> PRAVILNIK(PDF)
+				</a><br><br></p>
 		</div>
 		<div id="footer">
 			<p id="tim">

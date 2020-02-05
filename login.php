@@ -12,7 +12,7 @@
 	<style type="text/css">
 		.loginform {
 
-			font-family: Comic Sans MS;
+			font-family: Verdana;
 			font-size: 24px;
 			top: 80px;
 			left: 200px;
@@ -72,10 +72,10 @@
 			var user = document.getElementById('username').value;
 			var pass = document.getElementById('password').value;
 			if (user == "root" && pass == "root") {
-				alert("Uspesno ste se ulogovali.");
+				alert("Uspešno ste se ulogovali.");
 				window.open("adminPanel.php");
 			} else {
-				alert("Pogresan username/password.");
+				alert("Pogrešan username/password.");
 			}
 
 		}
