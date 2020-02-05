@@ -32,7 +32,7 @@
 		</div>
 		<div id="content">
 			<div class="pull-right" id="anketa">
-				<h3>Ocenite "Fervex", naš predlog za Lek nedelje:</h3>
+				<h3>Ocenite "Fervex", naš predlog za "Lek nedelje":</h3>
 				<form>
 					Odličan:
 					<input type="radio" name="glas" value="0" onclick="getVote(this.value)">
