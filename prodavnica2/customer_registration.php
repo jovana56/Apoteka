@@ -28,12 +28,12 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar navbar-header">
-					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-book
+					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-plus
 "></span> E-apoteka</a>
 				</div>
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="index.php"><span class="glyphicon glyphicon-home"></span> Pocetna</a>
+						<a href="index.php" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>  Početna</a>
 					</li>
 				</ul>
 			</div>
@@ -57,41 +57,41 @@
 						<form method="post">
 							<div class="row">
 								<div class="col-md-6">
-									<label for="f_name">Ime</label>
+									<label for="f_name">Ime:</label>
 									<input type="text"  name="f_name" id="f_name" class="form-control">
 								</div>
 								<div class="col-md-6">
-									<label for="l_name">Prezime</label>
+									<label for="l_name">Prezime:</label>
 									<input type="text" name="l_name" id="l_name" class="form-control">					
 								</div>								
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<label for="e_name">Email</label>
+									<label for="e_name">E-mail:</label>
 									<input type="text"  name="email" id="email" class="form-control">
 								</div>												
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<label for="password">Šifra</label>
+									<label for="password">Šifra:</label>
 									<input type="text"  name="password" id="password" class="form-control">
 								</div>												
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<label for="repassword">Ponovo unesite šifru</label>
+									<label for="repassword">Ponovo unesite šifru:</label>
 									<input type="text"  name="repassword" id="repassword" class="form-control">
 								</div>												
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<label for="mobile">Broj mobilnog telefona</label>
+									<label for="mobile">Broj mobilnog telefona:</label>
 									<input type="text"  name="mobile" id="mobile" class="form-control">
 								</div>												
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<label for="address1">Adresa</label>
+									<label for="address1">Adresa:</label>
 									<input type="text"  name="address1" id="address1" class="form-control">
 								</div>												
 							</div>

@@ -1,6 +1,6 @@
 
 body{
-	background: #fff url(../productImages/pozadina.jpg);
+	background: #fff url(../productImages/belo.png);
 }
 
 .panel {
@@ -10,7 +10,7 @@ body{
 
 .panel-body {
     
-    background: #fff url(../productImages/pozadina.jpg);
+    background: #fff url(../productImages/belo.png);
 }
 
 .panel-footer {
@@ -18,7 +18,12 @@ body{
 }
 
 #cart_product {
-	color: white;
+	color:black;
+}
+
+#cart_checkout{
+	color:black;
+
 }
 
 .dropdown-menu {

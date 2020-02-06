@@ -11,21 +11,12 @@
 	<script src="js/jszasuger.js" type="text/javascript"> </script>
 
 	<script src="js/sugerisi.js" type="text/javascript"></script>
-	<style>
-		#dobrodosli {
-			font-family: Comic Sans MS;
-			font-size: 30px;
-			top: 80px;
-			left: 140px;
-			position: absolute;
-			background: rgba(255, 0, 0, 0.3);
-		}
-	</style>
+	
 
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="pozadina2.jpg">
 		</div>
 		<div id="meni">
 			<ul>

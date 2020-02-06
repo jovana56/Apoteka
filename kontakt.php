@@ -9,20 +9,13 @@
 	<link rel="icon" type="image/png" href="kapsula.png">
 
 	<style>
-		#dobrodosli {
-			font-family: verdana;
-			font-size: 30px;
-			top: 80px;
-			left: 140px;
-
-			position: absolute;
-			background: rgba(255, 0, 0, 0.3);
-		}
+	
 
 		#content {
 
 			padding-left: 50px;
 			padding-bottom: 50px;
+			
 		}
 	</style>
 	<script type="text/javascript">
@@ -51,7 +44,7 @@
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="pozadina2.jpg">
 		</div>
 		<div id="meni">
 			<ul>
@@ -80,10 +73,12 @@
 				<input type="text" id="email" name="email" required>
 				<br><br>
 				Komentar:<br>
-				<textarea rows="5" cols="50" name="kom" required>
-				</textarea> <br><br>
-				<input type="submit" value="Pošalji" style="height: 30px; width: 60px">
+				<textarea rows="4" cols="50" name="kom" required>
+
+				</textarea>  <br><br>
+				<input type="submit" value="Pošalji" style="margin-left:150px; height: 30px; width: 100px">
 			</form>
+			
 			<?php
 			if (isset($_GET['ime']) && isset($_GET['prezime']) && isset($_GET['email']) && isset($_GET['kom'])) {
 				$url = 'http://localhost/itehProjekat/komentar';

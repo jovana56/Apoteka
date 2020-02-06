@@ -22,14 +22,32 @@
 		#pravilo {
 
 			font-family: Verdana;
-			padding: 20px;
+			/* padding: 20px; */
+		}
+
+		#vesti {
+
+			border: 1px solid black;
+			overflow: scroll;
+			overflow-y: scroll;
+			overflow-x: hidden;
+			width: 860px;
+			height: 200px;
+
+			position: absolute;
+			margin-bottom: 40px;
+
+			margin-right: 10px;
+			margin-top: 50px;
+			color: black;
+
 		}
 	</style>
 
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="slikaHome.jpg">
 		</div>
 		<div id="meni">
 			<ul>
@@ -46,33 +64,43 @@
 			</ul>
 		</div>
 		<div id="content">
-			<p id="dobrodosli" align="justify"><b>Dobrodošli u  e-apoteku!</p>
+			<!-- <p id="dobrodosli" align="justify"><b>Dobrodošli u e-apoteku!</p>
+			 -->
 		</div>
+		<div id="vesti">
+			<h1 align="center">Vesti</h1>
+			<?php include "vesti.php" ?>
+
+		</div>
+
 		<div id="pretraga">
-			<p id="pronadji" align="justify"><b> Želite da pronađete određeni lek? <a href="pretraga.php"> <br>PRETRAŽI LEK</a> <br></br>
+			<p id="pronadji" align="justify" style="padding:20px;"><b> Želite da pronađete određeni lek? <a href="pretraga.php">  PRETRAŽI LEK</a> <br></br>
 			</p>
 
 		</div>
 		<div id="pdf">
-			<p id="pravilo" align="justify"><b>Pravila korišćenja sajta:</b>
-				<a href="pdfpravilnik.php" target="blank"><br> PRAVILNIK(PDF)
-				</a><br><br></p>
+			<!-- <p id="pravilo" align="justify"><b>Pravila korišćenja sajta:</b> -->
+			<!-- <a href="pdfpravilnik.php" target="blank"><br> PRAVILNIK(PDF) -->
+			</a><br><br></p>
 		</div>
+
+
+
 		<div id="footer">
 			<p id="tim">
-				Despotović, Todorovići</p>
+				Pravila korišćenja sajta: 
+			
+				<a href="pdfpravilnik.php" target="blank">PRAVILNIK(PDF) </p>
 			<p id="datum">
 				<script>
 					var datum = new Date();
-					document.write(datum.getDate() + ".02." + datum.getFullYear() + ".");
+					document.write(datum.getDate() + ".2." + datum.getFullYear() + ".");
 				</script>
 			</p>
 
 		</div>
 
 	</div>
-
-
 
 
 

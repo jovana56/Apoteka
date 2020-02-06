@@ -8,16 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 	<link rel="icon" type="image/png" href="kapsula.png">
 
-	<style>
-		#dobrodosli {
-			font-family: Comic Sans MS;
-			font-size: 30px;
-			top: 80px;
-			left: 140px;
-			position: absolute;
-			background: rgba(255, 0, 0, 0.3);
-		}
-	</style>
+
 	<script>
 		window.onload = function() {
 			ucitajProizvodjace();
@@ -54,7 +45,7 @@
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="pozadina2.jpg">
 		</div>
 		<div id="meni">
 			<ul>
@@ -91,7 +82,7 @@
 <br><br><br>
 
 		</div>
-		<div id="footer">
+		<div id="footer" ">
 			<p id="tim">
 			Despotović, Todorovići </p>
 			<p id="datum">

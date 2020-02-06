@@ -9,10 +9,11 @@
 	<link rel="icon" type="image/png" href="kapsula.png">
 	<style>
 	#admin{
-		font-family: Comic Sans MS;
+		font-family: Verdana;
 		font-size: 30px;
 		color: black;
 		background: rgba(255,0,0,0.3);
+		padding: 20px;
 		}
 	</style>
 </head>
@@ -29,20 +30,21 @@
 			<a href="logout.php">Log out</a>
 			<a href="izlistajLekove.php">Svi lekovi</a>
 		</div>
-		<div id="content">
-			<h1>DODAVANJE PROIZVODJACA</h1>
+		<div id="content" style="padding:20px;">
+			<h1>Dodavanje proizvođača</h1>
 			<div id="dodajProizvodjaca">
 				<form name="addJ" action="" method="post" accept-charset="utf-8">
    				 	<ul>
        			 		<li>Naziv:
         					<input type="text" name="imeProizvodjaca" required></li>
-        				
+        				<br>
         				<li>Adresa: 
-        					<input type="text" name="adresa" required></li>
+							<input type="text" name="adresa" required></li>
+							<br>
         				<li>Broj izdatih lekova: 
         					<input type="text" name="brojIzdatihLekova" required></li>
-        				
-        					<input type="submit" value="Dodaj proizvodjaca" name="SubmitButton"></li>
+        				<br>
+        					<input type="submit" value="Dodaj proizvođača" name="SubmitButton"></li>
     				</ul>
 				</form>
 				<?php if(isset($_POST['SubmitButton'])) 
@@ -57,16 +59,16 @@
 						$novoProizvodjac = new Proizvodjac($imeProizvodjaca1,$adresa1,$brojIzdatihLekova1);
 						
 						if ($novoProizvodjac->addToDatabase()) {
-							echo "<script>alert('Proizvodjac je uspesno ubacen!')</script>";
+							echo "<script>alert('Proizvođač je uspešno ubačen!')</script>";
 						} else {
-							echo "<script>alert('Proizvodjac nije ubacen!')</script>";
+							echo "<script>alert('Proizvođač nije ubačen!')</script>";
 						}
 						}
 				?>
 
 			</div>
 			
-			<h1>BRISANJE PROIZVODJACA</h1>
+			<h1>Brisanje proizvođača</h1>
 			<div id="obrisiProizvodjaca">
 				<?php
 					include "konekcija.php";
@@ -74,7 +76,7 @@
 					$rezultat = $mysqli->query($sql);
 				?>
 				<form method="post"> 
-					<b>Izaberi proizvodjaca za brisanje:</b>
+					<b>Izaberi proizvođača za brisanje:</b>
 					<select name="proizvodjaciKombo">
 				<?php
 					while($red = $rezultat->fetch_object()){
@@ -84,7 +86,7 @@
 					}
 				?>
 					</select>
-					<input type="submit" value="Obrisi proizvodjaca" name="ObrisiProizvodjaca">
+					<input type="submit" value="Obriši proizvođača" name="ObrisiProizvodjaca">
 				</form>
 				<?php if(isset($_POST['ObrisiProizvodjaca'])) 
 						{
@@ -95,7 +97,7 @@
 							$id=$_POST["proizvodjaciKombo"];
 							$sql="DELETE FROM proizvodjaci WHERE idProizvodjaca = ".$id;
 							if ($mysqli->query($sql)){
-									echo "<script>alert('Proizvodjac je uspesno izbrisan!')</script>";
+									echo "<script>alert('Proizvođač je uspešno izbrisan!')</script>";
 									header("Refresh:0");
 							} else {
 								$greska = $mysqli->error;
@@ -109,7 +111,7 @@
 			</div>
 			
 			<br>
-			<h1>IZMENA PROIZVODJACA</h1>
+			<h1>Izmena proizvođača</h1>
 			<div id="Izmeni proizvodjaca">
 				<?php
 					include "konekcija.php";
@@ -117,8 +119,9 @@
 					$rezultat = $mysqli->query($sql);
 				?>
 				<form method="post">
-					<b>Izaberi proizvodjaca za azuriranje:</b>
+					<b>Izaberi proizvođača za ažuriranje:</b>
 					<select name="proizvodjaciAzuriranje">
+						<br>
 				<?php
 					while($red = $rezultat->fetch_object()){
 				?>
@@ -126,18 +129,18 @@
 				<?php
 					}
 				?>
-					</select><br>
-					<b>Izaberite atribut za azuriranje:</b>
+					</select><br><br>
+					<b>Izaberite atribut za ažuriranje:</b>
 					<select name="atributiProizvodjaca">
 						<option value="nazivProizvodjaca">Naziv</option>
 						
 						<option value="adresa">Adresa</option>
 						<option value="brojIzdatihLekova">Broj izdatih lekova</option>
 						
-					</select><br>
+					</select><br> <br>
 					<b>Unesite novu vrednost:</b>
 					<input type="text" name="izmena">
-					<input type="submit" value="Azuriraj" name="Azuriraj">
+					<input type="submit" value="Ažuriraj" name="Azuriraj">
 				</form>
 				<?php if(isset($_POST['Azuriraj'])) 
 						{

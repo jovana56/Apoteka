@@ -23,7 +23,7 @@
 <body>
   <div id="wrap">
     <div id="header">
-      <img class="hederi" src="img/apoteka.jpeg">
+      <img class="hederi" src="pozadina2.jpg">
     </div>
     <div id="meni">
       <ul>

@@ -25,7 +25,7 @@
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="pozadina2.jpg">
 		</div>
 		<div id="meni">
 			<ul>
@@ -42,27 +42,27 @@
 			</ul>
 		</div>
 		<div id="content">
-			<section class="loginform">
+			<section class="loginform" style="padding:30px;">
 				<form name="login" action="" method="post" accept-charset="utf-8">
-					<ul>
-						<li>Username:
-							<input type="text" id="username" required></li>
-						<li>Password:
-							<input type="password" id="password"></li>
-						<li>
-							<input type="submit" value="LOGIN" onclick="formaDugme()"></li>
-					</ul>
+
+					Username:
+					<input type="text" id="username" required> <br>
+					Password:
+					<input type="password" id="password"> <br>
+
+					<input type="submit" value="LOGIN" style="width: 150px; height: 30px; margin-top: 20px; margin-left: 80px;" onclick="formaDugme()"></li>
+
 				</form>
 			</section>
 			</form>
 		</div>
 		<div id="footer">
 			<p id="tim">
-			Despotović, Todorovići</p>
+				Despotović, Todorovići</p>
 			<p id="datum">
 				<script>
 					var datum = new Date();
-					document.write(datum.getDate() + ".2."  + datum.getFullYear() + ".");
+					document.write(datum.getDate() + ".2." + datum.getFullYear() + ".");
 				</script>
 			</p>
 		</div>

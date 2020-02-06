@@ -338,10 +338,10 @@ if (isset($_POST['cart_checkout'])) {
 					<div class="col-md-2">
 					    <img src='productImages/<?php echo "$pro_image"; ?>' style="width: 65px; height: 65px;">
 					</div>
-					<div class="col-md-2"><!-- Product Name --><?php echo "$pro_title"; ?></div> 					
-					<div class="col-md-2"><!-- Quantity --><input type="text" class='form-control qty' pid='<?php echo "$pro_id"; ?>' id="qty-<?php echo "$pro_id"; ?>" value='<?php echo "$qty"; ?>' ></div><!-- ***PAZI!!!! u value mora '' a ne "" kad ima php !!!! -->
-					<div class="col-md-2"><!-- Product Price --><input type="text" class='form-control price' pid='<?php echo "$pro_id"; ?>' id='price-<?php echo "$pro_id"; ?>' value='<?php echo "$pro_price"; ?>' disabled></div><!-- ***PAZI!!!! u value mora '' a ne "" kad ima php !!!! -->
-					<div class="col-md-2"><!-- Price in $ --><input type="text" class='form-control total' pid='<?php echo "$pro_id"; ?>' id='total-<?php echo "$pro_id"; ?>' value='<?php echo "$total"; ?>' disabled></div>	<!-- ***PAZI!!!! u value mora '' a ne "" kad ima php !!!! -->		
+					<div class="col-md-2" style="color:black"><?php echo "$pro_title"; ?></div> 					
+					<div class="col-md-2"><input type="text" style="color:black" class='form-control qty' pid='<?php echo "$pro_id"; ?>' id="qty-<?php echo "$pro_id"; ?>" value='<?php echo "$qty"; ?>' ></div><!-- ***PAZI!!!! u value mora '' a ne "" kad ima php !!!! -->
+					<div class="col-md-2"><input type="text" style="color:black" class='form-control price' pid='<?php echo "$pro_id"; ?>' id='price-<?php echo "$pro_id"; ?>' value='<?php echo "$pro_price"; ?>' disabled></div><!-- ***PAZI!!!! u value mora '' a ne "" kad ima php !!!! -->
+					<div class="col-md-2"><input type="text" style="color:black" class='form-control total' pid='<?php echo "$pro_id"; ?>' id='total-<?php echo "$pro_id"; ?>' value='<?php echo "$total"; ?>' disabled></div>	<!-- ***PAZI!!!! u value mora '' a ne "" kad ima php !!!! -->		
 				</div>
 			<?php
 			$no=$no+1;

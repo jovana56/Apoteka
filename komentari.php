@@ -22,7 +22,7 @@
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="pozadina2.jpg">
 		</div>
 		<div id="meni">
 			<ul>
@@ -37,7 +37,7 @@
 				<li><a href="login.php">Log in</a></li>
 			</ul>
 		</div>
-		<div id="content">
+		<div id="content" style="padding-left:20px; padding-bottom: 30px;">
 			<?php
 			$url = 'http://localhost/itehProjekat/komentari';
 			$curl = curl_init($url);

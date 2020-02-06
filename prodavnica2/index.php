@@ -30,11 +30,11 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar navbar-header">
-					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-book
+					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-plus
 "></span> E-apoteka</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="#"><span class="glyphicon glyphicon-home"></span> Pocetna</a></li>
+					<li><a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>  Početna</a></li>
 					<li style="width: 300px; left: 10px;top: 10px;"><input type="text" name="" class="form-control" id="search"></li>
 					<li style="top: 10px;left: 20px;"><button class="btn btn-primary" id="search_btn"> Pretraga <span class="glyphicon glyphicon-search"></span></button>
 					</li>
@@ -42,7 +42,7 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span>Korpa<span class="badge">0</span></a>
+					<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Korpa<span class="badge">0</span></a>
 					<div class="dropdown-menu" style="width: 400px;">
 						<div class="panel panel-success">
 							<div class="panel-heading">
@@ -59,7 +59,7 @@
 						</div>
 					</div>
 					</li>
-					<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>Sign in</a>
+					<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign in</a>
 					<!-- Pod meni -->
 					<ul class="dropdown-menu">
 						<div style="width: 300px;">
@@ -81,7 +81,7 @@
 						</div>
 					</ul>
 					</li>
-					<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>	
+					<li><a href="customer_registration.php"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>	
 
 				</ul>
 			</div>
@@ -106,12 +106,12 @@
 					
 				</div>
 				<!-- ***PANEL veliki -->
-				<div class="col-md-8">
+				<div class="col-md-8" >
 					<div class="panel panel-info">
 						<div class="panel-heading"><strong>Lekovi</strong></div>
-						<div class="panel-body">
+						<div class="panel-body" >
 						    <!--*** Panel POJEDINACNI(mali)   -->
-						    <div id="get_proizvod">
+						    <div id="get_proizvod" >
 						    	
 						    </div>
 						    

@@ -35,11 +35,11 @@
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar navbar-header">
-					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-book
+					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-plus
 "></span> E-apoteka</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Pocetna</a></li>
+					<li><a href="index.php" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>   Početna</a></li>
 					<!-- <li><a href="#"><span class="glyphicon glyphicon-modal-window"></span>Product</a></li> -->
 				</ul>
 			</div>

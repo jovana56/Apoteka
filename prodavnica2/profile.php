@@ -33,11 +33,11 @@ if (!isset($_SESSION['uid'])) {
 		<div class="navbar navbar-inverse navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="navbar navbar-header">
-					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-book
+					<a href="../home.php" class="navbar-brand"><span class="glyphicon glyphicon-plus
 "></span> E-apoteka</a>
 				</div>
 				<ul class="nav navbar-nav">
-					<li><a href="index.php"><span class="glyphicon glyphicon-home"></span>Pocetna</a></li>
+					<li><a href="index.php" class="navbar-brand"><span class="glyphicon glyphicon-home"></span>  Početna</a></li>
 					<li style="width: 300px; left: 10px;top: 10px;"><input type="text" name="" class="form-control" id="search"></li>
 					<li style="top: 10px;left: 20px;"><button class="btn btn-primary" id="search_btn"> Pretraga <span class="glyphicon glyphicon-search"></span></button>
 					<li style="top: 10px;left: 30px;"><button class="btn btn-primary" id="prikazSviLekovi_btn"> Prikaz svih lekova <span class="glyphicon glyphicon-search"></span></button>
@@ -49,19 +49,19 @@ if (!isset($_SESSION['uid'])) {
 					<li>
 						<a href="#" id="cart_container" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-shopping-cart"></span> Korpa <span class="badge">
 								<!-- 0 --></span></a>
-						<div class="dropdown-menu" style="width: 400px;">
+						<div class="dropdown-menu" style="width: 400px; color: black;">
 							<div class="panel panel-success">
 								<div class="panel-heading">
 									<div class="row">
-										<div class="col-md-3">Redni broj</div> <!-- Serial number-->
-										<div class="col-md-3">Slika leka</div>
-										<div class="col-md-3">Naziv leka</div>
-										<div class="col-md-3">Cena</div>
+										<div class="col-md-3" style="color: black;">Redni broj</div> <!-- Serial number-->
+										<div class="col-md-3" style="color: black;">Slika leka</div>
+										<div class="col-md-3" style="color: black;">Naziv leka</div>
+										<div class="col-md-3" style="color: black;">Cena</div>
 									</div>
 								</div>
 								<!-- ***Ovde podaci cart_product-->
 								<div class="panel-body">
-									<div id="cart_product">
+									<div id="cart_product" >
 
 									</div>
 
@@ -73,10 +73,10 @@ if (!isset($_SESSION['uid'])) {
 					<li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> <?php echo " ." .  $_SESSION['name']; ?></a>
 						<!-- Pod meni -->
 						<ul class="dropdown-menu">
-							<li><a href="cart.php" style="text-decoration: none; color: #337AB7;"><span class="glyphicon glyphicon-shopping-cart"></span>Korpa</a></li>
+							<li><a href="cart.php" style="text-decoration: none; color: #337AB7;"><span class="glyphicon glyphicon-shopping-cart"></span> Korpa</a></li>
 							<li class="divider"></li>
 
-							<li><a href="logout.php" style="text-decoration: none; color: #ac2925;">Logout</a></li>
+							<li><a href="logout.php" style="text-decoration: none; color: #ac2925;">Log out</a></li>
 						</ul>
 					</li>
 
@@ -147,6 +147,7 @@ if (!isset($_SESSION['uid'])) {
 			</div>
 		</div>
 
+		
 	</div>
 
 

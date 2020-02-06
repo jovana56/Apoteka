@@ -14,7 +14,7 @@
 <body>
 	<div id="wrap">
 		<div id="header">
-			<img class="hederi" src="img/apoteka.jpeg">
+			<img class="hederi" src="pozadina2.jpg">
 		</div>
 		<div id="meni">
 			<ul>
@@ -31,7 +31,7 @@
 			</ul>
 		</div>
 		<div id="content">
-			<div class="pull-right" id="anketa">
+			<div class="pull-right" id="anketa" style="padding-left:30px; padding-bottom: 30px;">
 				<h3>Ocenite "Fervex", naš predlog za "Lek nedelje":</h3>
 				<form>
 					Odličan:
