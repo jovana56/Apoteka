@@ -35,14 +35,26 @@
 		$(document).ready(function() {
 			$("#search").click(function() {
 				var ocena = document.getElementById("poljePretraga").value;
-				$("#lekT tr:gt(0)").remove();
-				$.getJSON('servis1.php', {
-					"uslov": ocena
-				}, function(data) {
-					$.each(data.lekovi, function(i, lek) {
-						$("#lekT tbody").append('<tr><td>' + lek.nazivLeka + '</td><td>' + lek.godinaProizvodnje + '</td><td>' + lek.nazivProizvodjaca + ' ' + lek.adresa + '</td><td>' + lek.imeDobavljaca + ' ' + lek.adresaDobavljaca + '</td><td>' + lek.ocena + '</td></tr>');
-					})
-				})
+
+				if (isNaN(ocena)) {
+					alert("Niste uneli broj!");
+					ucitajLekove();
+				} else {
+					if (ocena > 10 || ocena < 0) {
+						alert("Ocena nije u granicama!");
+						ucitajLekove();
+					} else {
+						$("#lekT tr:gt(0)").remove();
+						$.getJSON('servis1.php', {
+							"uslov": ocena
+						}, function(data) {
+							$.each(data.lekovi, function(i, lek) {
+								$("#lekT tbody").append('<tr><td>' + lek.nazivLeka + '</td><td>' + lek.godinaProizvodnje + '</td><td>' + lek.nazivProizvodjaca + ' ' + lek.adresa + '</td><td>' + lek.imeDobavljaca + ' ' + lek.adresaDobavljaca + '</td><td>' + lek.ocena + '</td></tr>');
+							})
+						})
+					}
+
+				}
 
 
 			});
@@ -93,11 +105,11 @@
 		</div>
 		<div id="footer">
 			<p id="tim">
-			Despotović, Todorovići</p>
+				Despotović, Todorovići</p>
 			<p id="datum">
 				<script>
 					var datum = new Date();
-					document.write(datum.getDate() + ".2." + datum.getFullYear() + ".");
+					document.write(datum.getDate() + "." +(datum.getMonth()+1)+"."+ datum.getFullYear() + ".");
 				</script>
 			</p>
 		</div>

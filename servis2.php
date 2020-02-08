@@ -35,7 +35,7 @@ echo '{"greska":"Nema rezultata."}';
 function prikaziProizvodjaceSaUslovom($uslov){
 header("Content-type: application/json");?>{"proizvodjaci":<?php
 require_once "konekcija.php";
-$sql="SELECT nazivProizvodjaca, adresa, brojIzdatihLekova FROM proizvodjaci WHERE brojIzdatihLekova>='".$uslov."'";
+$sql="SELECT nazivProizvodjaca, adresa, brojIzdatihLekova FROM proizvodjaci WHERE brojIzdatihLekova>='".$uslov."' ORDER BY brojIzdatihLekova DESC";
 if (!$q=$mysqli->query($sql)){
 //ako se upit ne izvrši
 echo '{"greska":"Nastala je greška pri izvršavanju upita."}';

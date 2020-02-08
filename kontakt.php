@@ -124,7 +124,7 @@
 			<p id="datum">
 				<script>
 					var datum = new Date();
-					document.write(datum.getDate() + ".2." + datum.getFullYear() + ".");
+					document.write(datum.getDate() + "." +(datum.getMonth()+1)+"."+ datum.getFullYear() + ".");
 				</script>
 			</p>
 		</div>

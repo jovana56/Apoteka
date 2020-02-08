@@ -7,16 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 	<link rel="icon" type="image/png" href="kapsula.png">
 
-	<style>
-		#dobrodosli {
-			font-family: Comic Sans MS;
-			font-size: 30px;
-			top: 80px;
-			left: 140px;
-			position: absolute;
-			background: rgba(255, 0, 0, 0.3);
-		}
-	</style>
+
 </head>
 
 <body>
@@ -62,7 +53,7 @@
 			<p id="datum">
 				<script>
 					var datum = new Date();
-					document.write(datum.getDate() + ".2." + datum.getFullYear() + ".");
+					document.write(datum.getDate() + "." +(datum.getMonth()+1)+"."+ datum.getFullYear() + ".");
 				</script>
 			</p>
 		</div>

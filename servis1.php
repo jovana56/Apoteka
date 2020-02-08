@@ -38,7 +38,7 @@ if ($uslov>10) {
 	echo '{"greska":"Ocene su od 1 do 10."}';
 }
 require_once "konekcija.php";
-$sql="SELECT nazivLeka, godinaProizvodnje, nazivProizvodjaca, adresa, imeDobavljaca, adresaDobavljaca, l.ocena FROM lekovi l join proizvodjaci p ON l.proizvodjac=p.idProizvodjaca join dobavljaci d ON l.dobavljac=d.idDobavljac WHERE l.ocena>='".$uslov."'";
+$sql="SELECT nazivLeka, godinaProizvodnje, nazivProizvodjaca, adresa, imeDobavljaca, adresaDobavljaca, l.ocena FROM lekovi l join proizvodjaci p ON l.proizvodjac=p.idProizvodjaca join dobavljaci d ON l.dobavljac=d.idDobavljac WHERE l.ocena>='".$uslov."' ORDER BY l.ocena DESC";
 if (!$q=$mysqli->query($sql)){
 //ako se upit ne izvrši
 echo '{"greska":"Nastala je greška pri izvršavanju upita."}';

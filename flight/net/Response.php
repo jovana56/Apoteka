@@ -8,6 +8,7 @@
 
 namespace flight\net;
 
+
 /**
  * The Response class represents an HTTP response. The object
  * contains the response headers, HTTP status code, and response

@@ -8,6 +8,8 @@
 
 namespace flight\core;
 
+
+
 /**
  * The Dispatcher class is responsible for dispatching events. Events
  * are simply aliases for class methods or functions. The Dispatcher

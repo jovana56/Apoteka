@@ -80,9 +80,7 @@
 
 		}
 	</script>
-	<script>
-		$('#formica').validate(); // car je misa
-	</script>
+	
 
 
 </body>

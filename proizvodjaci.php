@@ -27,16 +27,28 @@
 		$(document).ready(function() {
 			$("#searchA").click(function() {
 				var broj = document.getElementById("poljePretragaA").value;
-				$("#proizvodjaciT tr:gt(0)").remove();
-				$.getJSON('servis2.php', {
-					"uslov": broj
-				}, function(data) {
-					$.each(data.proizvodjaci, function(i, proizvodjac) {
-						$("#proizvodjaciT tbody").append('<tr><td>' + proizvodjac.nazivProizvodjaca + '</td><td>' + proizvodjac.adresa + '</td><td>' + proizvodjac.brojIzdatihLekova + '</td></tr>');
-					})
-				})
 
+				if (isNaN(broj)) {
+					alert("Niste uneli broj!");
+					ucitajProizvodjace();
+				} else {
 
+					if (broj > 30 || broj < 0) {
+
+						alert("Broj izdatih lekova moze bii izmedju 0 i 30!");
+						ucitajProizvodjace();
+					} else {
+						$("#proizvodjaciT tr:gt(0)").remove();
+						$.getJSON('servis2.php', {
+							"uslov": broj
+						}, function(data) {
+
+							$.each(data.proizvodjaci, function(i, proizvodjac) {
+								$("#proizvodjaciT tbody").append('<tr><td>' + proizvodjac.nazivProizvodjaca + '</td><td>' + proizvodjac.adresa + '</td><td>' + proizvodjac.brojIzdatihLekova + '</td></tr>');
+							})
+						})
+					}
+				}
 			});
 		});
 	</script>
@@ -79,12 +91,12 @@
 
 				</tbody>
 			</table>
-<br><br><br>
+			<br><br><br>
 
 		</div>
-		<div id="footer" ">
+		<div id="footer">
 			<p id="tim">
-			Despotović, Todorovići </p>
+				Despotović, Todorovići </p>
 			<p id="datum">
 				<script>
 					var datum = new Date();
